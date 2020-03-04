@@ -1,0 +1,30 @@
+PETRUSCA BOGDAN-MIHAI 323CB
+
+//TASKUL1
+Petru a crea echipele am folosit ca design pattern Singleton si Factory.
+Singleton este folosit pentru a crea o singura instanta a clasei, iar factory
+pentru a usura crearea echipelor. Amandoua design pattern-uri sunt implementate
+in clasa "TeamConstructor". Aceeast idee am folosit-o si pentru crearea Competitiilor.
+
+//TASKUL2
+Am gandit taskul2 astfel:
+
+-pentru a calcula scorul fiecarei echipe din competitie am utilizat design pattern-ul
+Visitor implementat cu interfetele "Visitor" si "Visitable" si care intoarce scorul
+echipelor in functie de tipul echipei (masculin/feminin si fotbal/basket/handbal). 
+Metoda "accept" ia ca parametru interfata Visitor si alege ce tip de calcul de scor
+sa aleaga (tipul competitiei fotbal etc...).
+
+-competitia propiu-zisa este implementata de metoda "game" din clasa "Competition".
+Fiecare echipa se lupta o data cu celelalte. Dupa fiecare meci, utilizand design
+pattern-ul Observer (implementat de interfetele "Observer" si "Subject"), updatez
+scorurile echipelor. La sfarsit sortez clasamentul
+
+Am incercat cat de cat sa fac unele metode sa mearga pentru toate tipurile de competitie,
+de aceea in unele parti codul se repeta deoarce am folosit clasele Object si E si a trebuit
+sa fac cast de fiecare data la clasa reprezentativa fiecarei competitii. (De exemplu in 
+metoda "updatePoints").
+
+
+
+
